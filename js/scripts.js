@@ -10,16 +10,16 @@ $(document).ready(function () {                           // on document load
     var answers = [locationAnswer, importantAnswer, foodAnswer, activityAnswer, stayAnswer];
 
     console.log(answers);
-    answers.forEach(function(answer) {      // for each answer
-      if (3 <= "paris") {                                 // if 3 or more answers = paris
-        $("#paris").show();                   // show paris div
-      } else if (3 <= "tokyo") {                          // else if 3 or more answers = tokyo
-        $("#tokyo").show();                   // show tokyo div
-      } else if (3 <= "bahamas") {                          // else if 3 or more answers = bahamas
-        $("#bahamas").show();                 // show bahamas div
-      } else {                                // else
-        $("#tryAgain").show();                // show tryAgain div
-      }                
+    answers.forEach(function(answer) {                            // for each answer
+      if (($ .inArray("paris", answers)) >= 3) {                  // if 3 or more answers = paris
+        $("#paris").show();                                       // show paris div
+      } else if (($ .inArray("tokyo", answers)) >= 3) {           // else if 3 or more answers = tokyo
+        $("#tokyo").show();                                       // show tokyo div
+      } else if (($ .inArray("bahamas", answers)) >= 3) {         // else if 3 or more answers = bahamas
+        $("#bahamas").show();                                     // show bahamas div
+      } else {                                                    // else
+        $("#tryAgain").show();                                    // show tryAgain div
+      }
     });
 
     event.preventDefault();   // prevent submit event
