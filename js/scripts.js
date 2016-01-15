@@ -8,7 +8,12 @@ $(document).ready(function () {    // on document load
     var answers = [locationAnswer, importantAnswer, foodAnswer, activityAnswer, stayAnswer]; // make an array of all the select ids
 
     console.log(answers);
-  // for each answer (5 total)
+    answers.forEach(function(answer) {
+    if (answer === paris) {
+                                    // for each answer (5 total)
+                                                    // see how many of each equal result1, 2, or 3
+    } else {
+  })// for each answer (5 total)
         // see how many of each equal result1, 2, or 3
 
         // if >3 questions === result1 show result1 div
@@ -19,3 +24,10 @@ $(document).ready(function () {    // on document load
     event.preventDefault();   // prevent submit event
   });
 });
+
+
+// this for loop could be helpful???
+// for (index = 0; index < answers.length; ++index) {
+//   console.log(answers[index]);
+//   if (index )
+// }
