@@ -1,7 +1,14 @@
-$(document).ready(function (){    // on document load
-  $("form#something").submit(function (event){    // on submit button event
-    // make an array of all the answers
-    // for each answer (5 total)
+$(document).ready(function () {    // on document load
+  $("form#vacation").submit(function (event) {    // on submit button event
+    var locationAnswer = $("select#location").val();
+    var importantAnswer = $("select#important").val();
+    var foodAnswer = $("select#food").val();
+    var activityAnswer = $("select#activity").val();
+    var stayAnswer = $("select#stay").val();
+    var answers = [locationAnswer, importantAnswer, foodAnswer, activityAnswer, stayAnswer]; // make an array of all the select ids
+
+    console.log(answers);
+  // for each answer (5 total)
         // see how many of each equal result1, 2, or 3
 
         // if >3 questions === result1 show result1 div
