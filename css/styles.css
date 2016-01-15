@@ -1,3 +1,7 @@
 #paris, #tokyo, #bahamas, #tryAgain, #answerAll {
   display: none;
 }
+
+img {
+  max-width: 900px;
+}
