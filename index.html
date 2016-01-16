@@ -14,86 +14,91 @@
       <h1>Vacation Quiz</h1>
       <p class="lead">Answer the questions below to find your perfect travel destination!</p>
 
-            <!-- FORM -->
-      <form id="vacation">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- FORM -->
+          <form id="vacation">
 
-        <label for="location">What part of the world?</label>
-        <select id="location">
-          <option value="0"> </option>
-          <option value="1">Europe</option>
-          <option value="2">Asia</option>
-          <option value="3">The Atlantic Ocean</option>
-        </select>
+            <label for="location">What part of the world?</label>
+            <select class="form-control" id="location">
+              <option value="0"> </option>
+              <option value="1">Europe</option>
+              <option value="2">Asia</option>
+              <option value="3">The Atlantic Ocean</option>
+              <option value="4">Out of this world</option>
+            </select>
 
-        <label for="important">What is most important to you?</label>
-        <select id="important">
-          <option value="blank"> </option>
-          <option value="1">Great art and architecture</option>
-          <option value="2">Vibrant culture and cool style</option>
-          <option value="3">Sunny weather and being near the ocean</option>
-        </select>
+            <label for="important">What is most important to you?</label>
+            <select class="form-control" id="important">
+              <option value="blank"> </option>
+              <option value="1">Great art and architecture</option>
+              <option value="2">Vibrant culture and cool style</option>
+              <option value="3">Sunny weather and being near the ocean</option>
+              <option value="4">Science experiments</option>
+            </select>
 
-        <label for="food">What kind of food?</label>
-        <select id="food">
-          <option value="blank"> </option>
-          <option value="1">Wine and cheese</option>
-          <option value="5">Sushi and ramen</option>
-          <option value="10">Seafood and tropical fruits</option>
-        </select>
+            <label for="food">What kind of food?</label>
+            <select class="form-control" id="food">
+              <option value="blank"> </option>
+              <option value="1">Wine and cheese</option>
+              <option value="2">Sushi and ramen</option>
+              <option value="3">Seafood and tropical fruits</option>
+              <option value="4">Freeze-dried</option>
+            </select>
 
-        <label for="activity">What activities?</label>
-        <select id="activity">
-          <option value="blank"> </option>
-          <option value="1">Visiting famous art museums</option>
-          <option value="5">Karaoke,  </option>
-          <option value="10">Surfing</option>
-        </select>
+            <label for="activity">What activities?</label>
+            <select class="form-control" id="activity">
+              <option value="blank"> </option>
+              <option value="1">Visiting famous art museums</option>
+              <option value="2">Karaoke</option>
+              <option value="3">Surfing</option>
+              <option value="4">Hanging out in zero-g</option>
+            </select>
 
-        <label for="stay">Where would you like to stay?</label>
-        <select id="stay">
-          <option value="blank"> </option>
-          <option value="1">In a cozy apartment above a cafe</option>
-          <option value="5">In the heart of a bustling metropolis</option>
-          <option value="10">In a bungalow on the beach</option>
-        </select>
+            <label for="stay">Where would you like to stay?</label>
+            <select class="form-control" id="stay">
+              <option value="blank"> </option>
+              <option value="1">In a cozy apartment above a cafe</option>
+              <option value="2">The heart of a bustling metropolis</option>
+              <option value="3">In a bungalow on the beach</option>
+              <option value="4">A sleeping bag hanging from a wall</option>
+            </select>
 
-        <button type="submit" class="btn">Go</button>
+            <button type="submit" class="btn">Go</button>
 
-      </form>
-
+          </form>
+        </div>
             <!-- ANSWER DIVS -->
-      <div id="paris">
-        <h3>Paris</h3>
-        <img src="img/paris.jpg" alt="Paris, France" />
-        <p>
+        <div class="col-md-6" id="paris">
+          <h3>You got: Paris</h3>
+          <img src="img/paris.jpg" alt="Paris, France" />
+          <p>
 
-        </p>
-      </div>
+          </p>
+        </div>
 
-      <div id="tokyo">
-        <h3>Tokyo</h3>
-        <img src="img/tokyo.jpg" alt="Tokyo, Japan" />
-        <p>
+        <div class="col-md-6" id="tokyo">
+          <h3>You got: Tokyo</h3>
+          <img src="img/tokyo.jpg" alt="Tokyo, Japan" />
+          <p>
 
-        </p>
-      </div>
+          </p>
+        </div>
 
-      <div id="bahamas">
-        <h3>The Bahamas</h3>
-        <img src="img/bahamas.jpg" alt="The Bahamas" />
-        <p>
+        <div class="col-md-6" id="bahamas">
+          <h3>You got: The Bahamas</h3>
+          <img src="img/bahamas.jpg" alt="The Bahamas" />
+          <p>
 
-        </p>
-      </div>
+          </p>
+        </div>
 
-      <div id="answerAll">
-        <h3>Please answer all the questions</h3>
-        <img src="img/kitten.jpeg" alt="A kitten" />
-      </div>
+        <div class="col-md-6" id="tryAgain">
+          <h3>Please try again</h3>
+          <img src="img/sloth.jpg" alt="A sloth" />
+          <p>We could not compute a result from the answers you provided, please try again.</p>
+        </div>
 
-      <div id="tryAgain">
-        <h3>Please try again</h3>
-        <p>We could not compute a result from the answers you provided, please try again.</p>
       </div>
 
     </div>
