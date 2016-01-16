@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("form#vacation").submit(function (event) {
-    // $("#paris", "#tokyo", "#bahamas").hide();         // why is this not working?
+    $(".result").hide();         // why is this not working?
 
     var locationAnswer = parseInt($("select#location").val());
     var importantAnswer = parseInt($("select#important").val());
