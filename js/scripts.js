@@ -1,5 +1,7 @@
-$(document).ready(function () {                           // on document load
-  $("form#vacation").submit(function (event) {            // on submit button event
+$(document).ready(function () {
+  $("form#vacation").submit(function (event) {
+    // $("#paris", "#tokyo", "#bahamas").hide();         // why is this not working?
+
     var locationAnswer = parseInt($("select#location").val());
     var importantAnswer = parseInt($("select#important").val());
     var foodAnswer = parseInt($("select#food").val());
@@ -9,12 +11,14 @@ $(document).ready(function () {                           // on document load
     var total = locationAnswer + importantAnswer + foodAnswer + activityAnswer + stayAnswer;
 
     console.log(total);
-      if (total <= 23) {
+      if (total <= 6) {
         $("#paris").show();
-      } else if (total > 23 && total < 12 || total == 29) {
+      } else if (total > 6 && total <= 12) {
         $("#tokyo").show();
-      } else if (total > 29) {
+      } else if (total > 13 && total <= 18) {             // this logic isn't working :/
         $("#bahamas").show();
+      } else if (total > 19 && total <= 24) {
+        $("#space").show();
       } else {
         $("#tryAgain").show();
       };
